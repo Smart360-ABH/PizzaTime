@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Pizza Time brand: dark cozy canvas with red accent */
+    --background: 24 14% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 24 14% 14%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 24 14% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 5 85% 52%; /* Pizza red */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 24 12% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 24 12% 20%;
+    --muted-foreground: 27 12% 70%;
+
+    --accent: 35 92% 50%; /* warm amber */
+    --accent-foreground: 24 14% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 24 10% 22%;
+    --input: 24 10% 22%;
+    --ring: 5 85% 52%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar tokens */
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 5 85% 52%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 24 10% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 24 10% 20%;
+    --sidebar-ring: 35 92% 50%;
+
+    /* Extra tokens for premium feel */
+    --primary-glow: 5 85% 60%;
+  }
+
+  .dark {
+    --background: 24 14% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 24 14% 14%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 24 14% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 5 85% 52%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 24 12% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 24 12% 20%;
+    --muted-foreground: 27 12% 70%;
+
+    --accent: 35 92% 50%;
+    --accent-foreground: 24 14% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 24 10% 22%;
+    --input: 24 10% 22%;
+    --ring: 5 85% 52%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 5 85% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 24 10% 18%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 24 10% 20%;
+    --sidebar-ring: 35 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
